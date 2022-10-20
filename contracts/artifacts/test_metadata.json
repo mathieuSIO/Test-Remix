@@ -6,26 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_monAddress",
+						"type": "address"
+					}
+				],
 				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_balance",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getLastPeron",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -64,10 +57,10 @@
 	},
 	"sources": {
 		"contracts/test.sol": {
-			"keccak256": "0xe868a1ff71b2004555ededd605657dd9fff99baf715441a5dab061968645242f",
+			"keccak256": "0x1bf37f3099f10235072653370bde4d9d0d1b375411ebf7cb8312d13a3fbdae41",
 			"urls": [
-				"bzz-raw://883ee97ce970442d11c681b7573302b5bf4fe08d682aede0cfea59f26ed229ff",
-				"dweb:/ipfs/QmdiymtGJBTQuLaY372DLDrL6vZSoHDWUHvS6gfRs6HVjw"
+				"bzz-raw://fd853f175dd30264d2909abba39799a38a5f462f69412beced9e38dc873761ef",
+				"dweb:/ipfs/QmbLWC4LF7qSBvrt7ehEaJCFEnwNhD9n8xwk5qdcnvgySJ"
 			]
 		}
 	},
