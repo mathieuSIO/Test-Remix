@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getNombre",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -19,17 +19,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getLastPeron",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "_nombre",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
-				"name": "setNombre",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -60,10 +64,10 @@
 	},
 	"sources": {
 		"contracts/test.sol": {
-			"keccak256": "0xca1cfb198f5a0957c8dd7dfc038cd84ed43b352a598b12321fb1c479aafaac1d",
+			"keccak256": "0xe868a1ff71b2004555ededd605657dd9fff99baf715441a5dab061968645242f",
 			"urls": [
-				"bzz-raw://2d33f07002b07677e1ced841fdfea49add62e30d3970f3379ef533ae8f9b8728",
-				"dweb:/ipfs/QmVRFftEKR2yqmnLz4pb5JadJMUtvht9aR5KRwMmQT9Nad"
+				"bzz-raw://883ee97ce970442d11c681b7573302b5bf4fe08d682aede0cfea59f26ed229ff",
+				"dweb:/ipfs/QmdiymtGJBTQuLaY372DLDrL6vZSoHDWUHvS6gfRs6HVjw"
 			]
 		}
 	},
