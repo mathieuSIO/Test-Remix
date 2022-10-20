@@ -1,19 +1,31 @@
 pragma solidity 0.8.7;
 
-//En solidity priviligier les maps aux tableaux car les tableaux coutent cher en gaz
+//Les structures sont un peu comme des objets
 
-//Vidéo sur le mapping
+//Vidéo sur les structures
 contract test {
-    mapping(address => uint) Balances;
 
-    //On récupere la balance d'un compte donné sur notre contrat
-    function getBalance(address _monAddress) public view returns(uint _balance) {
-        return Balances[_monAddress];
+    struct balance {
+        uint money;
+        uint nbPayement;
     }
 
-    receive() external payable{
-        //Nous permet d'associer un montant à une adresse
-        Balances[msg.sender] = msg.value;
+    mapping(address => balance) Balances;
+
+    //On récupere la balance de la personne qui appele la fonction
+    function getBalance() public view returns(uint){
+        return Balances[msg.sender].money;
+    } 
+
+    //function qui permet de récuperer le nombre de paiement
+    function getNbPayement() public view returns(uint) {
+        return Balances[msg.sender].nbPayement;
     }
 
+    receive() external payable {
+        Balances[msg.sender].money += msg.value;
+        Balances[msg.sender].nbPayement++;
+    }
+
+    
 }

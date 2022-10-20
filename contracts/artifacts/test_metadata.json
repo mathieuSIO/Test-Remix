@@ -6,18 +6,25 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_monAddress",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "_balance",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNbPayement",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -57,10 +64,10 @@
 	},
 	"sources": {
 		"contracts/test.sol": {
-			"keccak256": "0x1bf37f3099f10235072653370bde4d9d0d1b375411ebf7cb8312d13a3fbdae41",
+			"keccak256": "0xb0870c821c1b95fee200ad991b04bc2e7cfaaff434479db55bbdd051dc0f99d1",
 			"urls": [
-				"bzz-raw://fd853f175dd30264d2909abba39799a38a5f462f69412beced9e38dc873761ef",
-				"dweb:/ipfs/QmbLWC4LF7qSBvrt7ehEaJCFEnwNhD9n8xwk5qdcnvgySJ"
+				"bzz-raw://85c76806f69b18b17ed4e53303cf7ebe0dcd6c51749005fb8423baafc6783e54",
+				"dweb:/ipfs/QmTyAqbdkudmumr6GtM3f3bzzr3X8xs8XarDbrYgkVGFow"
 			]
 		}
 	},
