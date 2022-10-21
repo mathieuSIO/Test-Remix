@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getBalance",
+				"name": "getArgent",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,7 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getNbPayement",
+				"name": "getTotalArgent",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -29,6 +29,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "trasfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -64,10 +77,10 @@
 	},
 	"sources": {
 		"contracts/test.sol": {
-			"keccak256": "0xb0870c821c1b95fee200ad991b04bc2e7cfaaff434479db55bbdd051dc0f99d1",
+			"keccak256": "0x6987b7b447266e84e70ae4020e02cf3c816f0f7277e8907adf6ae632c4381e55",
 			"urls": [
-				"bzz-raw://85c76806f69b18b17ed4e53303cf7ebe0dcd6c51749005fb8423baafc6783e54",
-				"dweb:/ipfs/QmTyAqbdkudmumr6GtM3f3bzzr3X8xs8XarDbrYgkVGFow"
+				"bzz-raw://f9066e4e43e26026025729b1a5ae5ad0fe0e4d7b1b11d3622729f8489cbf3457",
+				"dweb:/ipfs/QmdjzmUJAhzdZvW6JAntzjY76EyVF782riuSN4yq1z2kma"
 			]
 		}
 	},
