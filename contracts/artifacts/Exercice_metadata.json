@@ -1,0 +1,119 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_eleve",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_note",
+						"type": "uint256"
+					}
+				],
+				"name": "addNote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_eleve",
+						"type": "address"
+					}
+				],
+				"name": "getNom",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_eleve",
+						"type": "address"
+					}
+				],
+				"name": "getNotes",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_eleve",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_nom",
+						"type": "string"
+					}
+				],
+				"name": "setNom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/exercice.sol": "Exercice"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/exercice.sol": {
+			"keccak256": "0xffbe49107d40ba37a16b981d8c00becb9e3373a41c6f32363cd2e47d8a5eccbd",
+			"urls": [
+				"bzz-raw://91a69f8946b35f377a2dfad7eb6ef7ba05efc880f4118a1d6673488329be5bc6",
+				"dweb:/ipfs/QmYJFYWvU92Vb5w2kusSs8d5bLqxmeWv3fXwEwYvy2tuY4"
+			]
+		}
+	},
+	"version": 1
+}
