@@ -1,31 +1,21 @@
 pragma solidity 0.8.7;
 
+//Vidéo 11 : Les structures de contrôle
 contract Exercice {
 
-    enum etape {commande, expedie, livre}
+    uint nombre;
 
-    struct produit {
-        uint _SKU;
-        Exercice.etape _etape;
+    function setNombre(uint _nb) public{
+        //Necessite la condidition pour continuer la fonction sin rend les gas pas utilisé
+        require(_nb != 10, "Le nombre ne peut pas etre egal a 10");
+        nombre = _nb;
     }
 
-    mapping (address => produit) CommandeClient;
-
-    function commander(address _cli, uint _SKU) public {
-        produit memory p = produit(_SKU, etape.commande);
-        CommandeClient[_cli] = p;
+    function getNombre() public view returns(uint){
+        return nombre;
     }
 
-    function expedier(address _cli) public{
-        CommandeClient[_cli]._etape = etape.expedie;
-    }
 
-    function getSKU(address _cli) public view returns(uint){
-        return CommandeClient[_cli]._SKU;
-    }
 
-     function getEtape(address _cli) public view returns(etape){
-        return CommandeClient[_cli]._etape;
-    }
 
 }

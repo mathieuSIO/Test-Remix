@@ -6,64 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_cli",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_SKU",
-						"type": "uint256"
-					}
-				],
-				"name": "commander",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_cli",
-						"type": "address"
-					}
-				],
-				"name": "expedier",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_cli",
-						"type": "address"
-					}
-				],
-				"name": "getEtape",
-				"outputs": [
-					{
-						"internalType": "enum Exercice.etape",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_cli",
-						"type": "address"
-					}
-				],
-				"name": "getSKU",
+				"inputs": [],
+				"name": "getNombre",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -72,6 +16,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_nb",
+						"type": "uint256"
+					}
+				],
+				"name": "setNombre",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -103,10 +60,10 @@
 	},
 	"sources": {
 		"contracts/exercice.sol": {
-			"keccak256": "0x0709295a6918b1a049b930d4fb07abecb28629b91e9531a7c21fed8e8ee676bc",
+			"keccak256": "0x7ad04458caefb534815c3b8dd26a9460b66806877738e67fe562a7a65519b7e9",
 			"urls": [
-				"bzz-raw://efa487055f92fe16ed0a94c120624d9b9b5e3d73ced6869d6b3fd5f3a346dff7",
-				"dweb:/ipfs/QmSq5vxbJ4SVfgz55QgRccudYzaTB1VQPGrVNc9MtB2xPk"
+				"bzz-raw://98f5435bba20b3b0de26f5b30075bb68b816fada12f2487e083aaff3daab9823",
+				"dweb:/ipfs/QmejZUTWctLi9AHMgN9yEzmWxeTnHcPGUAzU7CjN47NqRR"
 			]
 		}
 	},
