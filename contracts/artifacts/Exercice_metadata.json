@@ -9,16 +9,16 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_eleve",
+						"name": "_cli",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_note",
+						"name": "_SKU",
 						"type": "uint256"
 					}
 				],
-				"name": "addNote",
+				"name": "commander",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -27,16 +27,29 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_eleve",
+						"name": "_cli",
 						"type": "address"
 					}
 				],
-				"name": "getNom",
+				"name": "expedier",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_cli",
+						"type": "address"
+					}
+				],
+				"name": "getEtape",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "enum Exercice.etape",
 						"name": "",
-						"type": "string"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -46,37 +59,19 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_eleve",
+						"name": "_cli",
 						"type": "address"
 					}
 				],
-				"name": "getNotes",
+				"name": "getSKU",
 				"outputs": [
 					{
-						"internalType": "uint256[]",
+						"internalType": "uint256",
 						"name": "",
-						"type": "uint256[]"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_eleve",
-						"type": "address"
-					},
-					{
-						"internalType": "string",
-						"name": "_nom",
-						"type": "string"
-					}
-				],
-				"name": "setNom",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -108,10 +103,10 @@
 	},
 	"sources": {
 		"contracts/exercice.sol": {
-			"keccak256": "0xffbe49107d40ba37a16b981d8c00becb9e3373a41c6f32363cd2e47d8a5eccbd",
+			"keccak256": "0x0709295a6918b1a049b930d4fb07abecb28629b91e9531a7c21fed8e8ee676bc",
 			"urls": [
-				"bzz-raw://91a69f8946b35f377a2dfad7eb6ef7ba05efc880f4118a1d6673488329be5bc6",
-				"dweb:/ipfs/QmYJFYWvU92Vb5w2kusSs8d5bLqxmeWv3fXwEwYvy2tuY4"
+				"bzz-raw://efa487055f92fe16ed0a94c120624d9b9b5e3d73ced6869d6b3fd5f3a346dff7",
+				"dweb:/ipfs/QmSq5vxbJ4SVfgz55QgRccudYzaTB1VQPGrVNc9MtB2xPk"
 			]
 		}
 	},
